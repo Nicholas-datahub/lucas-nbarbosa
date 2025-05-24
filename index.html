@@ -1,95 +1,155 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucas Barbosa | Engenharia de Dados & BI</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lucas Barbosa | Data Engineering & BI</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header>
+<body data-spy="scroll" data-target=".navbar" data-offset="70" id="home">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" data-spy="affix">
     <div class="container">
-      <h1>Lucas Barbosa</h1>
-      <p class="subtitle">Engenheiro de Produção & Mestrando em Ciência da Computação<br>Especialista em Data Engineering e BI</p>
-      <div class="cta">
-        <a href="#contato" class="btn">Vamos Conversar</a>
+      <a class="navbar-brand" href="#home">Lucas Barbosa</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formacao">Formação</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
       </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="jumbotron jumbotron-fluid text-white bg-dark mb-0" id="home">
+    <div class="container text-center">
+      <h1 class="display-4">Lucas Barbosa</h1>
+      <p class="lead">Engenharia de Dados & Business Intelligence</p>
+      <a href="#contato" class="btn btn-primary btn-lg">Vamos Conversar</a>
     </div>
   </header>
 
-  <section id="sobre" class="container">
-    <h2>Sobre Mim</h2>
-    <p>Sou Engenheiro de Produção (Unichristus), com especialização em Ciência de Dados e mestrando em Ciência da Computação pelo IFCE. Com mais de quatro anos de experiência, transformo dados brutos em insights valiosos, construindo pipelines escaláveis no Azure (Data Factory, Synapse, Fabric), Databricks e modelando Data Warehouses robustos. Minha paixão é ajudar empresas a tomar decisões embasadas através de soluções de BI e Data Engineering.</p>
-  </section>
-
-  <section id="destaques" class="container">
-    <h2>Destaques</h2>
-    <ul class="highlights">
-      <li>✔️ Projetos em Azure Data Factory, Synapse Analytics e Databricks</li>
-      <li>✔️ Dashboards estratégicos em Power BI & Looker Studio</li>
-      <li>✔️ ETLs otimizados com versão e documentação no GitHub</li>
-      <li>✔️ Modelagem de Data Warehouse e Governança de Dados</li>
-      <li>✔️ Machine Learning com Python & scikit-learn para automação</li>
-    </ul>
-  </section>
-
-  <section id="formacao" class="container">
-    <h2>Formação Acadêmica</h2>
-    <ul>
-      <li><strong>Mestrado (2024–2026)</strong> em Ciência da Computação — IFCE (em andamento)</li>
-      <li><strong>Especialização (2023–2024)</strong> em Ciência de Dados & BI — Unichristus</li>
-      <li><strong>Engenharia de Produção (2014–2019)</strong> — Unichristus</li>
-    </ul>
-  </section>
-
-  <section id="experiencia" class="container">
-    <h2>Experiência Profissional</h2>
-    <div class="job">
-      <h3>Analista de BI — Fluency Academy (Remoto) <span>12/2023 – Atual</span></h3>
-      <p>Desenvolvo pipelines no Azure Data Factory, Synapse e Databricks, integro Salesforce, PostgreSQL, Redshift e outras fontes heterogêneas, e entrego dashboards em Power BI e Looker Studio. Aplico DAX avançado e Python para ETL e Machine Learning, garantindo qualidade e governança.</p>
-    </div>
-    <div class="job">
-      <h3>Professor Adjunto — Unichristus (Fortaleza/CE) <span>08/2024 – Atual</span></h3>
-      <p>Ministro Sistemas de Informações Gerenciais, capacitando futuros engenheiros a usar ERP, BI e CRM para otimizar processos e apoiar decisões estratégicas.</p>
-    </div>
-    <div class="job">
-      <h3>Coordenador de BI — Grupo Velas (Fortaleza/CE) <span>04/2023 – 12/2023</span></h3>
-      <p>Liderança de equipe de BI, mapeamento e automação de ETL, análise de KPIs alinhados aos OKRs e relatórios automatizados para o comitê executivo.</p>
-    </div>
-    <div class="job">
-      <h3>Analista de BI PL — ITC Vertebral (Fortaleza/CE) <span>10/2020 – 04/2023</span></h3>
-      <p>Concepção de Data Warehouse, desenvolvimento de indicadores corporativos e dashboards em Power BI e Looker Studio, com automação de ingestão de dados.</p>
-    </div>
-    <div class="job">
-      <h3>Assessor de Processos & Estagiário — ORPLAC (Fortaleza/CE) <span>04/2018 – 10/2020</span></h3>
-      <p>Mapeamento de processos com Bizagi, implantação ISO 9001, automação SQL, indicadores operacionais e rotina PDCA.</p>
-    </div>
-  </section>
-
-  <section id="habilidades" class="container">
-    <h2>Habilidades & Certificações</h2>
-    <ul>
-      <li>SQL, Python (scikit-learn), DAX, Git/GitHub</li>
-      <li>Azure Data Factory, Synapse, Fabric, Databricks</li>
-      <li>Power BI, Looker Studio, Governança de Dados</li>
-      <li>Certificações: GenAI, Power BI, Looker Studio, ISO 9001 Auditor</li>
-    </ul>
-  </section>
-
-  <section id="contato" class="container">
-    <h2>Contato</h2>
-    <p>📞 +55 85 9 9842-8115</p>
-    <p>✉️ <a href="mailto:l.nicholasbarbosa@gmail.com">l.nicholasbarbosa@gmail.com</a></p>
-    <p>🔗 <a href="https://www.linkedin.com/in/lucas-barbosa-dataviz/" target="_blank">linkedin.com/in/lucas-barbosa-dataviz</a></p>
-  </section>
-
-  <footer>
+  <!-- Habilidades -->
+  <section id="habilidades" class="py-5">
     <div class="container">
-      <p>&copy; 2025 Lucas Barbosa. Todos os direitos reservados.</p>
+      <h2 class="mb-4">Principais Habilidades</h2>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 mb-3">
+          <h5>Data Engineering</h5>
+          <p>Azure Data Factory, Synapse Analytics, Databricks, Data Warehouses e ETL.</p>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3">
+          <h5>Business Intelligence</h5>
+          <p>Power BI, Looker Studio, DAX avançado e storytelling de dados.</p>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3">
+          <h5>Data Science</h5>
+          <p>Python, scikit-learn, automação de ML e análise exploratória.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="bg-light py-5">
+    <div class="container">
+      <h2 class="mb-4">Sobre Mim</h2>
+      <p>Engenheiro de Produção (Unichristus), com especialização em Ciência de Dados e mestrando em Ciência da Computação (IFCE). Possuo mais de quatro anos de experiência em BI e engenharia de dados no ecossistema Azure e Databricks, integrando fontes heterogêneas, modelando ETL, governando Data Warehouses e desenvolvendo dashboards que geram impacto real nas decisões das empresas.</p>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Projetos de Destaque</h2>
+      <div class="row">
+        <!-- Dashboard Power BI -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="assets/img/powerbi-dashboard.png" class="card-img-top" alt="Dashboard Power BI">
+            <div class="card-body">
+              <h5 class="card-title">Dashboards Estratégicos</h5>
+              <p class="card-text">Desenvolvimento de relatórios interativos em Power BI com métricas de desempenho chave para stakeholders.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-sm btn-outline-primary">Ver Detalhes</a>
+            </div>
+          </div>
+        </div>
+        <!-- ETL Python -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="assets/img/python-etl.png" class="card-img-top" alt="ETL Python">
+            <div class="card-body">
+              <h5 class="card-title">Automação de ETL</h5>
+              <p class="card-text">Scripts Python para ingestão, limpeza e transformação de grandes volumes de dados.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-sm btn-outline-primary">Ver GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Modelagem SQL -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="assets/img/sql-modeling.png" class="card-img-top" alt="Modelagem SQL">
+            <div class="card-body">
+              <h5 class="card-title">Modelagem de Dados</h5>
+              <p class="card-text">Projetos de Data Warehouse e consultas SQL complexas para suporte a análises e BI.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-sm btn-outline-primary">Ver Código</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formação -->
+  <section id="formacao" class="bg-light py-5">
+    <div class="container">
+      <h2 class="mb-4">Formação Acadêmica</h2>
+      <ul class="list-group">
+        <li class="list-group-item">Mestrado em Ciência da Computação — IFCE (2024–2026)</li>
+        <li class="list-group-item">Especialização em Ciência de Dados & BI — Unichristus (2023–2024)</li>
+        <li class="list-group-item">Engenharia de Produção — Unichristus (2014–2019)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Entre em Contato</h2>
+      <p>📞 (85) 9 9842-8115</p>
+      <p>✉️ <a href="mailto:l.nicholasbarbosa@gmail.com">l.nicholasbarbosa@gmail.com</a></p>
+      <p>🔗 <a href="https://www.linkedin.com/in/lucas-barbosa-dataviz/" target="_blank">linkedin.com/in/lucas-barbosa-dataviz</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <small>&copy; <script>document.write(new Date().getFullYear())</script> Lucas Barbosa. Todos os direitos reservados.</small>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
