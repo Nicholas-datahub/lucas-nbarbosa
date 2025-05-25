@@ -1,123 +1,55 @@
-:root {
-  --cor-fundo: #F1F1F1;
-  --blue: #79A9F5;
-  --indigo: #C45F90;
-  --purple: #A16AE8;
-  --pink: #FC8BC0;
-  --red: #F85C70;
-  --orange: #FF8882;
-  --yellow: #FAD02C;
-  --green: #A3C14A;
-  --teal: #20c997;
-  --cyan: #47D8E0;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #ff7a57;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #f8f9fa;
-  --dark: #343a40;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-/* Reset e base */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
 body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f4f4;
+  color: #333;
   margin: 0;
-  font-family: var(--font-family-sans-serif);
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
+  padding: 0;
+  line-height: 1.6;
 }
 
-/* Compatível com modo escuro */
-@media (prefers-color-scheme: dark) {
-  body {
-    color: var(--darkreader-text-ffffff, #e8e6e3);
-    background-color: var(--darkreader-background-ffffff, #181a1b);
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: '✔️ ';
+  margin-right: 0.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1.0s; }
+.delay-6 { animation-delay: 1.2s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-
-  .page-footer {
-    color: var(--darkreader-text-ffffff, #e8e6e3);
-    background: linear-gradient(0deg, rgba(14, 14, 14, 0.8), rgba(14, 14, 14, 0.8)),
-                linear-gradient(0deg, #2e2e2e, #2e2e2e);
-    opacity: 0.95;
-  }
-}
-
-/* Parágrafos */
-p {
-  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1200 - 320)));
-  margin-top: 0;
-  margin-bottom: 1rem;
-  letter-spacing: 0.6px;
-}
-
-/* Rodapé */
-.page-footer p {
-  margin-bottom: 0;
-}
-
-/* Scrollbar custom (opcional e visível em navegadores modernos) */
-* {
-  scrollbar-color: #454a4d #202324; /* fundo e trilho */
-}
-
-/* Animação de fade-in para a página */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Animação de entrada suave de baixo para cima */
-@keyframes slideUp {
-    from {
-        transform: translateY(10px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Aplicação das animações */
-body {
-    animation: fadeIn 0.8s ease-in-out;
-}
-
-p {
-    animation: slideUp 0.6s ease-out;
-    transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-.page-footer {
-    animation: fadeIn 1s ease-in;
-}
-
-/* Hover com leve transição de cor para links e botões */
-a, button {
-    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
-}
-a:hover, button:hover {
-    transform: translateY(-2px);
-}
-
-/* Elementos com classe .card (se houver) */
-.card {
-    animation: slideUp 0.6s ease-out;
-    transition: box-shadow 0.3s ease;
-}
-.card:hover {
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }

@@ -1,155 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lucas Barbosa | Data Engineering & BI</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body data-spy="scroll" data-target=".navbar" data-offset="70" id="home">
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" data-spy="affix">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currículo de Lucas Nicholas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-      <a class="navbar-brand" href="#home">Lucas Barbosa</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <header class="fade-in">
+        <h1>Lucas Nicholas Araujo Barbosa</h1>
+        <p>Brasileiro, 30 anos, casado</p>
+      </header>
 
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#formacao">Formação</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      <section class="fade-in delay-1">
+        <h2>📞 Contato</h2>
+        <ul>
+          <li>Email: lucas.nicholas@gmail.com</li>
+          <li>Telefone: (91) 99191-9191</li>
+          <li>LinkedIn: linkedin.com/in/lucasnicholas</li>
+          <li>GitHub: github.com/lucasnicholas</li>
         </ul>
-      </div>
-    </div>
-  </nav>
+      </section>
 
-  <!-- Header -->
-  <header class="jumbotron jumbotron-fluid text-white bg-dark mb-0" id="home">
-    <div class="container text-center">
-      <h1 class="display-4">Lucas Barbosa</h1>
-      <p class="lead">Engenharia de Dados & Business Intelligence</p>
-      <a href="#contato" class="btn btn-primary btn-lg">Vamos Conversar</a>
-    </div>
-  </header>
+      <section class="fade-in delay-2">
+        <h2>🎯 Objetivo</h2>
+        <p>Atuar como Analista de BI</p>
+      </section>
 
-  <!-- Habilidades -->
-  <section id="habilidades" class="py-5">
-    <div class="container">
-      <h2 class="mb-4">Principais Habilidades</h2>
-      <div class="row">
-        <div class="col-sm-6 col-md-4 mb-3">
-          <h5>Data Engineering</h5>
-          <p>Azure Data Factory, Synapse Analytics, Databricks, Data Warehouses e ETL.</p>
-        </div>
-        <div class="col-sm-6 col-md-4 mb-3">
-          <h5>Business Intelligence</h5>
-          <p>Power BI, Looker Studio, DAX avançado e storytelling de dados.</p>
-        </div>
-        <div class="col-sm-6 col-md-4 mb-3">
-          <h5>Data Science</h5>
-          <p>Python, scikit-learn, automação de ML e análise exploratória.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+      <section class="fade-in delay-3">
+        <h2>🚀 Resumo</h2>
+        <p>
+          Profissional com mais de 5 anos de experiência em projetos de Business Intelligence no setor público e privado, com foco em dados portuários, logística e transportes. Especialista em SQL Server, Power BI e Python.
+        </p>
+      </section>
 
-  <!-- Sobre -->
-  <section id="sobre" class="bg-light py-5">
-    <div class="container">
-      <h2 class="mb-4">Sobre Mim</h2>
-      <p>Engenheiro de Produção (Unichristus), com especialização em Ciência de Dados e mestrando em Ciência da Computação (IFCE). Possuo mais de quatro anos de experiência em BI e engenharia de dados no ecossistema Azure e Databricks, integrando fontes heterogêneas, modelando ETL, governando Data Warehouses e desenvolvendo dashboards que geram impacto real nas decisões das empresas.</p>
-    </div>
-  </section>
+      <section class="fade-in delay-4">
+        <h2>🧠 Habilidades Técnicas</h2>
+        <ul>
+          <li>Power BI: Modelagem, DAX, Power Query</li>
+          <li>SQL Server: Procedures, views, tuning</li>
+          <li>Python: ETL, pandas, SQLAlchemy</li>
+          <li>Airflow, Docker, Git</li>
+          <li>Excel avançado</li>
+        </ul>
+      </section>
 
-  <!-- Projetos -->
-  <section id="projetos" class="py-5">
-    <div class="container">
-      <h2 class="mb-4">Projetos de Destaque</h2>
-      <div class="row">
-        <!-- Dashboard Power BI -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="assets/img/powerbi-dashboard.png" class="card-img-top" alt="Dashboard Power BI">
-            <div class="card-body">
-              <h5 class="card-title">Dashboards Estratégicos</h5>
-              <p class="card-text">Desenvolvimento de relatórios interativos em Power BI com métricas de desempenho chave para stakeholders.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-sm btn-outline-primary">Ver Detalhes</a>
-            </div>
-          </div>
-        </div>
-        <!-- ETL Python -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="assets/img/python-etl.png" class="card-img-top" alt="ETL Python">
-            <div class="card-body">
-              <h5 class="card-title">Automação de ETL</h5>
-              <p class="card-text">Scripts Python para ingestão, limpeza e transformação de grandes volumes de dados.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-sm btn-outline-primary">Ver GitHub</a>
-            </div>
-          </div>
-        </div>
-        <!-- Modelagem SQL -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="assets/img/sql-modeling.png" class="card-img-top" alt="Modelagem SQL">
-            <div class="card-body">
-              <h5 class="card-title">Modelagem de Dados</h5>
-              <p class="card-text">Projetos de Data Warehouse e consultas SQL complexas para suporte a análises e BI.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-sm btn-outline-primary">Ver Código</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      <section class="fade-in delay-5">
+        <h2>💼 Experiência</h2>
+        <h3>Analista de BI — ANTAQ (2021 - Atual)</h3>
+        <ul>
+          <li>Desenvolvimento de dashboards estratégicos no setor aquaviário</li>
+          <li>Implantação de pipelines ETL com Airflow e Python</li>
+          <li>Consultoria técnica para economistas e tomadores de decisão</li>
+        </ul>
 
-  <!-- Formação -->
-  <section id="formacao" class="bg-light py-5">
-    <div class="container">
-      <h2 class="mb-4">Formação Acadêmica</h2>
-      <ul class="list-group">
-        <li class="list-group-item">Mestrado em Ciência da Computação — IFCE (2024–2026)</li>
-        <li class="list-group-item">Especialização em Ciência de Dados & BI — Unichristus (2023–2024)</li>
-        <li class="list-group-item">Engenharia de Produção — Unichristus (2014–2019)</li>
-      </ul>
-    </div>
-  </section>
+        <h3>Consultor de Dados — Projetos Freelance (2019 - 2021)</h3>
+        <ul>
+          <li>Implantação de soluções de BI para pequenas empresas</li>
+          <li>Automatização de relatórios em Excel e Power BI</li>
+        </ul>
+      </section>
 
-  <!-- Contato -->
-  <section id="contato" class="py-5">
-    <div class="container">
-      <h2 class="mb-4">Entre em Contato</h2>
-      <p>📞 (85) 9 9842-8115</p>
-      <p>✉️ <a href="mailto:l.nicholasbarbosa@gmail.com">l.nicholasbarbosa@gmail.com</a></p>
-      <p>🔗 <a href="https://www.linkedin.com/in/lucas-barbosa-dataviz/" target="_blank">linkedin.com/in/lucas-barbosa-dataviz</a></p>
+      <section class="fade-in delay-6">
+        <h2>🎓 Formação Acadêmica</h2>
+        <p>Engenharia de Computação — UFPA (2011 - 2017)</p>
+      </section>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-      <small>&copy; <script>document.write(new Date().getFullYear())</script> Lucas Barbosa. Todos os direitos reservados.</small>
-    </div>
-  </footer>
-
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
