@@ -1,40 +1,123 @@
+:root {
+  --cor-fundo: #F1F1F1;
+  --blue: #79A9F5;
+  --indigo: #C45F90;
+  --purple: #A16AE8;
+  --pink: #FC8BC0;
+  --red: #F85C70;
+  --orange: #FF8882;
+  --yellow: #FAD02C;
+  --green: #A3C14A;
+  --teal: #20c997;
+  --cyan: #47D8E0;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #ff7a57;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Reset e base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f4f4f4;
-  color: #333;
+  font-family: var(--font-family-sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
 }
 
-header {
-  background: #004080;
-  color: white;
-  padding: 20px;
-  text-align: center;
+/* Compatível com modo escuro */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--darkreader-text-ffffff, #e8e6e3);
+    background-color: var(--darkreader-background-ffffff, #181a1b);
+  }
+
+  .page-footer {
+    color: var(--darkreader-text-ffffff, #e8e6e3);
+    background: linear-gradient(0deg, rgba(14, 14, 14, 0.8), rgba(14, 14, 14, 0.8)),
+                linear-gradient(0deg, #2e2e2e, #2e2e2e);
+    opacity: 0.95;
+  }
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+/* Parágrafos */
+p {
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1200 - 320)));
+  margin-top: 0;
+  margin-bottom: 1rem;
+  letter-spacing: 0.6px;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
+/* Rodapé */
+.page-footer p {
+  margin-bottom: 0;
 }
 
-section {
-  padding: 40px;
-  background: white;
-  margin: 20px;
-  border-radius: 8px;
+/* Scrollbar custom (opcional e visível em navegadores modernos) */
+* {
+  scrollbar-color: #454a4d #202324; /* fundo e trilho */
 }
 
-footer {
-  text-align: center;
-  padding: 10px;
-  background: #ccc;
+/* Animação de fade-in para a página */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Animação de entrada suave de baixo para cima */
+@keyframes slideUp {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Aplicação das animações */
+body {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+p {
+    animation: slideUp 0.6s ease-out;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.page-footer {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Hover com leve transição de cor para links e botões */
+a, button {
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+a:hover, button:hover {
+    transform: translateY(-2px);
+}
+
+/* Elementos com classe .card (se houver) */
+.card {
+    animation: slideUp 0.6s ease-out;
+    transition: box-shadow 0.3s ease;
+}
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
