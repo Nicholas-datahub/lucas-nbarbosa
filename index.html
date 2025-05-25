@@ -1,99 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lucas Nicholas | Data & BI</title>
-  <style>
-    /* Variáveis de tema */
-    :root {
-      --bg: #242325;
-      --btn: #284B63;
-      --element: #D9D9D9;
-      --link: #3C6E71;
-      --font: 'Segoe UI', Tahoma, sans-serif;
-    }
-    /* Reset */
-    * { margin:0; padding:0; box-sizing:border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      background: var(--bg);
-      color: var(--element);
-      font-family: var(--font);
-      line-height:1.6;
-    }
-    /* Navbar */
-    .navbar {
-      background: rgba(0,0,0,0.5);
-      position: sticky; top: 0; z-index: 100;
-      padding: 1rem;
-      animation: fadeInDown 0.8s ease;
-    }
-    .navbar ul { display:flex; justify-content:center; gap:2rem; list-style:none; }
-    .navbar a {
-      color: var(--link);
-      text-decoration:none;
-      font-weight:500;
-      transition: color 0.3s;
-    }
-    .navbar a:hover { color: var(--element); }
-    /* Container */
-    .container {
-      max-width:800px;
-      margin:2rem auto;
-      padding:2rem;
-      background: rgba(0,0,0,0.4);
-      border-radius:8px;
-      backdrop-filter: blur(5px);
-      animation: fadeInUp 0.8s ease;
-    }
-    header { text-align:center; margin-bottom:2rem; }
-    h1 { color: var(--element); font-size:2rem; }
-    header p { color: var(--link); }
-    /* Seções */
-    section { margin-bottom:2rem; }
-    section h2 { color: var(--element); margin-bottom:0.5rem; }
-    section p, section li { color: var(--element); }
-    section a { color: var(--link); text-decoration:none; }
-    section a:hover { text-decoration:underline; }
-    ul { list-style:none; }
-    ul li::before { content:'•'; color: var(--btn); margin-right:0.5rem; }
-    .job { margin-bottom:1rem; }
-    .job h3, .job p { color: var(--element); }
-    /* Botão */
-    .btn {
-      display:inline-block;
-      margin:1rem auto;
-      padding:0.8rem 1.5rem;
-      background: var(--btn);
-      color: var(--element);
-      border:none;
-      border-radius:4px;
-      cursor:pointer;
-      transition: transform 0.3s;
-    }
-    .btn:hover { transform:translateY(-3px); }
-    /* Rodapé */
-    .page-footer { text-align:center; margin-top:2rem; }
-    .page-footer p { margin-top:1rem; }
-    /* Animações */
-    @keyframes fadeInUp {
-      from { opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
-    @keyframes fadeInDown {
-      from { opacity:0; transform:translateY(-20px);} to {opacity:1; transform:translateY(0);} }
-    /* Delays */
-    .fade-in { opacity:0; animation-fill-mode:forwards; }
-    .delay-1 { animation: fadeInUp 0.6s ease 0.2s; }
-    .delay-2 { animation: fadeInUp 0.6s ease 0.4s; }
-    .delay-3 { animation: fadeInUp 0.6s ease 0.6s; }
-    .delay-4 { animation: fadeInUp 0.6s ease 0.8s; }
-    .delay-5 { animation: fadeInUp 0.6s ease 1.0s; }
-    .delay-6 { animation: fadeInUp 0.6s ease 1.2s; }
-    .delay-7 { animation: fadeInUp 0.6s ease 1.4s; }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav class="navbar fade-in" style="animation-delay:0.1s;">
+  <nav class="navbar">
     <ul>
       <li><a href="#contato">Contato</a></li>
       <li><a href="#objetivo">Objetivo</a></li>
@@ -105,12 +19,12 @@
   </nav>
 
   <div class="container">
-    <header class="fade-in delay-1">
+    <header>
       <h1>Lucas Nicholas Araujo Barbosa</h1>
       <p>Engenharia de Dados & Business Intelligence</p>
     </header>
 
-    <section id="contato" class="fade-in delay-2">
+    <section id="contato">
       <h2>📞 Contato</h2>
       <ul>
         <li>Email: l.nicholasbarbosa@gmail.com</li>
@@ -119,17 +33,17 @@
       </ul>
     </section>
 
-    <section id="objetivo" class="fade-in delay-3">
+    <section id="objetivo">
       <h2>🎯 Objetivo</h2>
       <p>Oferecer soluções em Data Engineering e BI para tomada de decisão estratégica.</p>
     </section>
 
-    <section id="resumo" class="fade-in delay-4">
+    <section id="resumo">
       <h2>🚀 Resumo</h2>
       <p>Engenheiro de Produção com especialização em Ciência de Dados e mestrando em Ciência da Computação pelo IFCE. 4+ anos de experiência em Azure Data Factory, Synapse, Databricks, SQL, Python e Power BI.</p>
     </section>
 
-    <section id="habilidades" class="fade-in delay-5">
+    <section id="habilidades">
       <h2>🧠 Habilidades</h2>
       <ul>
         <li>Azure Data Factory & Synapse</li>
@@ -140,7 +54,7 @@
       </ul>
     </section>
 
-    <section id="experiencia" class="fade-in delay-6">
+    <section id="experiencia">
       <h2>💼 Experiência</h2>
       <div class="job">
         <h3>Analista de BI — Fluency Academy (12/2023–Atual)</h3>
@@ -152,7 +66,7 @@
       </div>
     </section>
 
-    <section id="formacao" class="fade-in delay-7">
+    <section id="formacao">
       <h2>🎓 Formação</h2>
       <ul>
         <li>Mestrado em Ciência da Computação — IFCE (2024–2026)</li>
@@ -161,9 +75,9 @@
       </ul>
     </section>
 
-    <footer class="page-footer fade-in delay-7">
+    <footer class="page-footer">
       <button class="btn">Vamos Conversar</button>
-      <p>&copy; <script>document.write(new Date().getFullYear())</script> Lucas Nicholas.</p>
+      <p>&copy; <script src="main.js"></script><script>document.write(new Date().getFullYear())</script> Lucas Nicholas.</p>
     </footer>
   </div>
 </body>

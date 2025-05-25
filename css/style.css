@@ -5,72 +5,29 @@
   --link: #3C6E71;
   --font: 'Segoe UI', Tahoma, sans-serif;
 }
-
 * { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior: smooth; }
-body {
-  background: var(--bg);
-  color: var(--element);
-  font-family: var(--font);
-  line-height:1.6;
-}
-.navbar {
-  background: rgba(0,0,0,0.5);
-  position:sticky; top:0; z-index:100;
-  padding:1rem;
-  animation: fadeInDown 0.8s ease;
-}
-.navbar ul { display:flex; justify-content:center; gap:2rem; }
-.navbar a {
-  color: var(--link);
-  text-decoration:none;
-  font-weight:500;
-  transition: color 0.3s;
-}
+body { background: var(--bg); color: var(--element); font-family: var(--font); line-height:1.6; }
+.navbar { background: rgba(0,0,0,0.5); position:sticky; top:0; z-index:100; padding:1rem; }
+.navbar ul { display:flex; justify-content:center; gap:2rem; list-style:none; }
+.navbar a { color: var(--link); text-decoration:none; font-weight:500; transition: color 0.3s; }
 .navbar a:hover { color: var(--element); }
-
-.container {
-  max-width:800px;
-  margin:2rem auto;
-  padding:2rem;
-  background: rgba(0,0,0,0.4);
-  border-radius:8px;
-  backdrop-filter: blur(5px);
-  animation: fadeInUp 0.8s ease;
-}
+.container { max-width:800px; margin:2rem auto; padding:2rem; background: rgba(0,0,0,0.4); border-radius:8px; backdrop-filter: blur(5px); }
 header { text-align:center; margin-bottom:2rem; }
 h1 { color: var(--element); font-size:2rem; }
 header p { color: var(--link); }
-
 section { margin-bottom:2rem; }
 section h2 { color: var(--element); margin-bottom:0.5rem; }
 section p, section li { color: var(--element); }
-section a { color: var(--link); }
-
+section a { color: var(--link); text-decoration:none; }
+section a:hover { text-decoration:underline; }
 ul { list-style:none; }
 ul li::before { content:'•'; color: var(--btn); margin-right:0.5rem; }
 .job { margin-bottom:1rem; }
-.job h3 { color: var(--element); }
-.job p { color: var(--element); }
-
-.btn {
-  display:block;
-  margin:1rem auto;
-  padding:0.8rem 1.5rem;
-  background: var(--btn);
-  color: var(--element);
-  border:none;
-  border-radius:4px;
-  cursor:pointer;
-  transition: transform 0.3s;
-}
+.job h3, .job p { color: var(--element); }
+.btn { display:inline-block; margin:1rem auto; padding:0.8rem 1.5rem; background: var(--btn); color: var(--element); border:none; border-radius:4px; cursor:pointer; transition: transform 0.3s; }
 .btn:hover { transform:translateY(-3px); }
-
 .page-footer { text-align:center; margin-top:2rem; }
 .page-footer p { margin-top:1rem; }
-
-/* Animations */
-@keyframes fadeInUp {
-  from { opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
-@keyframes fadeInDown {
-  from { opacity:0; transform:translateY(-20px);} to {opacity:1; transform:translateY(0);} }
+@keyframes fadeInUp { from { opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
+@keyframes fadeInDown { from { opacity:0; transform:translateY(-20px);} to {opacity:1; transform:translateY(0);} }
