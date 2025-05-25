@@ -7,13 +7,42 @@ body {
   line-height: 1.6;
 }
 
+.navbar {
+  background-color: #181A1B;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  animation: fadeSlideDown 0.8s ease forwards;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  color: #B5AFA6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: #ffffff;
+}
+
 .container {
   max-width: 800px;
-  margin: auto;
+  margin: 2rem auto;
   padding: 2rem;
   background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
+  animation: fadeInUp 0.8s ease forwards;
 }
 
 h1, h2, h3 {
@@ -26,7 +55,7 @@ ul {
 }
 
 ul li::before {
-  content: '✔️ ';
+  content: ✔️ ';
   margin-right: 0.5rem;
 }
 
@@ -48,6 +77,17 @@ section {
 .delay-6 { animation-delay: 1.2s; }
 
 @keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
   to {
     opacity: 1;
     transform: translateY(0);
