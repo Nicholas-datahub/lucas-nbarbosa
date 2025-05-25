@@ -2,7 +2,7 @@ CustomEase.create('cubic', '0.83,0,0.17,1');
 let animating = false;
 function splitSpans(selector) {
   document.querySelectorAll(selector).forEach(el => {
-    el.innerHTML = el.textContent.split('').map(c => `<span>${c===' ' ? '&nbsp;': c}</span>`).join('');
+    el.innerHTML = el.textContent.split('').map(c => `<span>${c===' ' ? '&nbsp;' : c}</span>`).join('');
   });
 }
 function initSlider() {
